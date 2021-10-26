@@ -27,6 +27,8 @@ int main()
     return 0;
 }
 
+// Read user-input matrix from the command line
+
 void getMatrix( float matrix[rows][cols] )
 {
     int i, j;
@@ -38,6 +40,8 @@ void getMatrix( float matrix[rows][cols] )
     }
 }
 
+// Create a copy of the matrix, this is what gets reduced.
+
 void copyMatrix( float matrix[rows][cols], float matrixCopy[rows][cols] )
 {
     int i, j;
@@ -46,6 +50,8 @@ void copyMatrix( float matrix[rows][cols], float matrixCopy[rows][cols] )
             matrixCopy[i][j] = matrix[i][j];
     }
 }
+
+// Arrange rows in order of left-most leading values
 
 void swapRows( float matrixCopy[rows][cols] )
 {
@@ -95,6 +101,8 @@ void reduceMatrix( float matrixCopy[rows][cols] )
         }
     }
 }
+
+// Multiply row by a factor that will give a leading 1
 
 int getLeadingOne( int currentRow, float matrixCopy[rows][cols] )
 {
