@@ -1,4 +1,4 @@
-# Matrix_Reducer
+# MatrixReducer
 Performs Gauss-Jordan elimination on a user-input matrix.
 
 This is one of my oldest programs and not very well-documented.
